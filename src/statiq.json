@@ -1,0 +1,5 @@
+﻿{
+  "Layout": "/_layout.cshtml",
+  "NetlifySiteId": "MySiteId",
+  "NetlifyAccessToken": "=> TOKEN_VAR"
+}
