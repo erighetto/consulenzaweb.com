@@ -13,7 +13,7 @@ Action<FilePath, ProcessArgumentBuilder> Cmd => (path, args) => {
 };
 
 Task("Build")
-    .Does(() => DotNetCoreRun("./src/ConsulenzaWeb.csproj"));
+    .Does(() => DotNetCoreRun("ConsulenzaWeb.csproj"));
 
 Task("Install-Netlify-Cli")
     .Does(() => Cmd(npmPath, new ProcessArgumentBuilder()
@@ -36,7 +36,7 @@ Task("Deploy")
     });
 
 Task("Preview")
-    .Does(() => DotNetCoreRun("./src/ConsulenzaWeb.csproj", new ProcessArgumentBuilder()
+    .Does(() => DotNetCoreRun("ConsulenzaWeb.csproj", new ProcessArgumentBuilder()
         .Append("preview")));
 
 Task("Default")
