@@ -20,8 +20,14 @@
     <link rel="icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
 
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/purecss@2.0.3/build/base-min.css" rel="stylesheet">
+    <link href="https://unpkg.com/purecss@2.0.3/build/grids-min.css" rel="stylesheet">
+    <link href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" rel="stylesheet">
+    <link href="https://unpkg.com/purecss@2.0.3/build/menus-min.css" rel="stylesheet">
+    <link href="https://unpkg.com/purecss@2.0.3/build/buttons-min.css" rel="stylesheet">
+    <link href="https://unpkg.com/purecss@2.0.3/build/forms-min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Gayathri&display=swap" rel="stylesheet"> 
     <link href="@Context.GetLink("css/styles.css")" rel="stylesheet">
 
     <meta name="theme-color" content="#fafafa">
@@ -48,12 +54,56 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
             <p>
-                <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
+                <a href="https://www.consulenzaweb.net" class="pure-button pure-button-primary">Get Started</a>
             </p>
         </div>
     </div>
 
     <div class="content-wrapper">
+
+        <div class="content">
+            <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
+
+            <div class="pure-g">
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                    <h3 class="content-subhead">
+                        <i class="fa fa-rocket"></i>
+                        Get Started Quickly
+                    </h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fa fa-mobile"></i>
+                        Responsive Layouts
+                    </h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fa fa-th-large"></i>
+                        Modular
+                    </h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fa fa-check-square-o"></i>
+                        Plays Nice
+                    </h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+            </div>
+        </div>
 
         <div class="content">
 
@@ -67,7 +117,7 @@
         </div>
 
         <div class="footer l-box is-center">
-            View the source of this layout to learn more. Made with love by the Pure Team.
+            @DateTime.Now.Year - Build with <a href="https://statiq.dev">Statiq</a>
         </div>
 
     </div>

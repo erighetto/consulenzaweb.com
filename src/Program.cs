@@ -1,7 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Statiq.App;
-using Statiq.Common;
-using Statiq.Core;
 using Statiq.Web;
 
 namespace ConsulenzaWeb
