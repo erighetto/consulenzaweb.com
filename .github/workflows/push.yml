@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v1.4.0
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v1.4.0
 
-      - name: Run Cake
-        run: ./build.sh --target=deploy
-        env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    - name: Run Cake
+      run: ./build.sh --target=deploy
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
