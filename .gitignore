@@ -371,3 +371,4 @@ MigrationBackup/
 temp/
 output/
 wwwroot/
+.DS_Store
