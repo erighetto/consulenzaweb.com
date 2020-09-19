@@ -1,0 +1,8 @@
+temp/
+output/
+wwwroot/
+bin/
+obj/
+.vs
+.github
+.git

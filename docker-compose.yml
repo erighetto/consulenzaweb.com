@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+
+  consulenzaweb:
+    image: consulenzaweb
+    container_name: consulenzaweb
+    build:
+      context: .

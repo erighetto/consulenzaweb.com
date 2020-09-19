@@ -1,6 +1,6 @@
 ﻿$color_1: #7f8c8d;
 $color_2: #34495e;
-$color_3: white;
+$color_3: #ffffff;
 $color_4: #1f8dd6;
 $color_5: #6FBEF3;
 $color_6: #AECFE5;
@@ -198,6 +198,18 @@ a.pure-button-primary {
 
 .content {
     padding: 1em 1em 3em;
+
+    a {
+        color: $color_4;
+
+        &:visited, &:link {
+            text-decoration: underline;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 .content-head {
@@ -229,6 +241,17 @@ a.pure-button-primary {
     position: fixed;
     bottom: 0;
     width: 100%;
+
+    a {
+        color: $color_3;
+        &:visited, &:link {
+            text-decoration: underline;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 @media (min-width: 48em) {

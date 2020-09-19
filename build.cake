@@ -18,8 +18,8 @@ Task("Build")
 Task("Install-Netlify-Cli")
     .Does(() => Cmd(npmPath, new ProcessArgumentBuilder()
         .Append("install")
-        .AppendSwitch("--prefix", " ", "tools")
-        .Append("netlify-cli")));
+        .Append("netlify-cli")
+        .Append("--global")));
 
 Task("Deploy")
     .IsDependentOn("Build")
@@ -32,7 +32,7 @@ Task("Deploy")
 
         Cmd(netlifyPath, new ProcessArgumentBuilder()
             .Append("deploy")
-            .AppendSwitch("--dir", "=", "output"));
+            .AppendSwitch("--dir", "=", "output","--prod"));
     });
 
 Task("Preview")
