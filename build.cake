@@ -18,8 +18,7 @@ Task("Build")
 Task("Install-Netlify-Cli")
     .Does(() => Cmd(npmPath, new ProcessArgumentBuilder()
         .Append("install")
-        .Append("netlify-cli")
-        .Append("--global")));
+        .Append("netlify-cli")));
 
 Task("Deploy")
     .IsDependentOn("Build")
