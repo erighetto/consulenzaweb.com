@@ -32,7 +32,8 @@ Task("Deploy")
 
         Cmd(netlifyPath, new ProcessArgumentBuilder()
             .Append("deploy")
-            .AppendSwitch("--dir", "=", "output","--prod"));
+            .AppendSwitch("--dir", "=", "output")
+            .Append("--prod"));
     });
 
 Task("Preview")
